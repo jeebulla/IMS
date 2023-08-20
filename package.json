@@ -1,0 +1,24 @@
+{
+  "name": "bolt",
+  "version": "1.0.0",
+  "description": "IMS Electrical Engineering Services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [
+    "IMS",
+    "Electrical",
+    "Installer",
+    "Electrical",
+    "Engineer",
+    "Electrical",
+    "Consultant"
+  ],
+  "author": "Yusuf Muhammad Najeeb",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
