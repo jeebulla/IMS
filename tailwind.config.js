@@ -9,6 +9,7 @@ module.exports = {
       darkRed: "#BB2525",
       light: "#FFF5E0",
       lightRed: "#FF6969",
+      lighterRed: "#ff696990",
     },
   },
   plugins: [],
