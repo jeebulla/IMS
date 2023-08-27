@@ -667,6 +667,14 @@ video {
   width: 100%;
 }
 
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-5\/12 {
+  width: 41.666667%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -695,6 +703,10 @@ video {
   flex-basis: 58.333333%;
 }
 
+.basis-3\/12 {
+  flex-basis: 25%;
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -705,6 +717,10 @@ video {
 
 .flex-col-reverse {
   flex-direction: column-reverse;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-start {
@@ -965,6 +981,10 @@ video {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-thin {
+  font-weight: 100;
 }
 
 .leading-6 {
