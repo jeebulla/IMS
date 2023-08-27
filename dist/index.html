@@ -1,12 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/5a1d47c6c2.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <h1 class="bg-green-300">Hello World</h1>
+    <header>
+      <div class="hidden sm:block text-darkBlue bg-lightRed py-2 px-10">
+        <div class="flex flex-row justify-between text-sm font-extralight">
+          <ul class="flex flex-row gap-10">
+            <li class="flex-2 text-left">
+              <i
+                class="text-2xl text-darkBlue fa-solid fa-map-location-dot"
+              ></i>
+              <p class="inline-block">
+                <span class="block">New site Lugbe</span> Abuja, Nigeria.
+              </p>
+            </li>
+            <li class="flex-1">
+              <i class="text-2xl text-darkBlue fa-solid fa-phone-volume"></i>
+              <p class="inline-block">
+                <span class="block text-white">Call Us Anytime</span>
+                +2348178142982, +2348814205379
+              </p>
+            </li>
+          </ul>
+          <div>
+            <button
+              class="border-2 border-darkBlue py-2 px-4 rounded-md hover:bg-darkBlue hover:text-light"
+            >
+              Request A Service
+            </button>
+          </div>
+        </div>
+      </div>
+      <nav class="bg-darkBlue text-light">
+        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div class="relative flex h-16 items-center justify-between">
+            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+              <!-- Mobile menu button-->
+              <button
+                id="hamburger"
+                type="button"
+                class="relative inline-flex items-center justify-center rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="absolute -inset-0.5"></span>
+                <span class="sr-only">Open main menu</span>
+                <!--
+                  Icon when menu is closed.
+      
+                  Menu open: "hidden", Menu closed: "block"
+                -->
+                <svg
+                  id="opened"
+                  class="block h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+                <!--
+                  Icon when menu is open.
+      
+                  Menu open: "block", Menu closed: "hidden"
+                -->
+                <svg
+                  id="closed"
+                  class="hidden h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between"
+            >
+              <div class="flex flex-shrink-0 items-center justify-between">
+                <img
+                  class="h-8 w-auto"
+                  src="../images/logo.png"
+                  alt="Company logo"
+                />
+              </div>
+              <div class="hidden sm:ml-6 sm:block md:ml-auto">
+                <div class="flex space-x-4">
+                  <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                  <a
+                    href="#"
+                    class="bg-green-900 text-white rounded-md px-3 py-2 text-sm font-medium"
+                    aria-current="page"
+                    >Home</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >Services</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >About</a
+                  >
+                  <a
+                    href="#"
+                    class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+                    >Contact Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile menu, show/hide based on menu state. -->
+        <div class="sm:hidden" id="mobile_menu" style="display: none">
+          <div class="space-y-1 px-2 pb-3 pt-2">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a
+              href="#"
+              class="bg-green-900 text-white block rounded-md px-3 py-2 text-base font-medium"
+              aria-current="page"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section
+      class="absolute bg-white w-full h-[100%] lg:h-[100vh] bg-no-repeat bg-cover text-light"
+      style="background: url('../images/backgd.png')"
+    >
+      <div class="relative isolate px-4 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="text-center py-20 md:py-36 md:text-left">
+            <h1 class="text-4xl font-bold tracking-tight sm:text-6xl">
+              Experience the future of engineering excellence today
+            </h1>
+            <p class="mt-6 text-lg leading-8 max-w-2xl text-left">
+              Elevate your projects with our visionary electrical engineering
+              expertise. From ingenious solutions to unwavering problem-solving,
+              we drive innovative solution with qualitative services.
+            </p>
+            <div class="mt-10 flex items-center justify-start gap-x-6">
+              <a
+                href="#"
+                class="border rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-light hover:text-darkBlue hover:opacity-2"
+                >Request a Service</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let hamburger = document.getElementById("hamburger");
+      let opened = document.getElementById("opened");
+      let closed = document.getElementById("closed");
+      let mobileMenu = document.getElementById("mobile_menu");
+
+      hamburger.addEventListener("click", function () {
+        opened.classList.toggle("hidden");
+        opened.classList.remove("block");
+        closed.classList.toggle("hidden");
+
+        if (mobileMenu.style.display === "none") {
+          mobileMenu.style.display = "block";
+        } else {
+          mobileMenu.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
