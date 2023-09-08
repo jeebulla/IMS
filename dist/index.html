@@ -33,7 +33,7 @@
           </ul>
           <div>
             <button
-              class="border-2 border-darkBlue py-2 px-4 rounded-md hover:bg-darkBlue hover:text-light"
+              class="-2 border-darkBlue py-2 px-4 rounded-md hover:bg-darkBlue hover:text-light"
             >
               Request A Service
             </button>
@@ -101,7 +101,7 @@
             >
               <div class="flex flex-shrink-0 items-center justify-between">
                 <img
-                  class="h-[3rem]"
+                  class="w-full h-12"
                   src="images/logo.png"
                   alt="Company logo"
                 />
@@ -202,14 +202,21 @@
               <h2 class="text-2xl sm:text-4xl font-bold text-darkBlue mb-4">
                 Who We Are
               </h2>
-              <p class="text-lg leading-5 text-left md:text-justify">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Commodi veniam quidem quo repellendus adipisci at nam nisi, ex
-                ut labore error voluptas et rerum a totam aliquid fugiat minus
-                in eligendi officiis debitis odit voluptatum earum! Ipsa magnam
-                veniam aspernatur ipsam sunt sit, accusantium laborum fuga
-                atque? Nobis commodi aliquid ad tempore tenetur, magni modi quia
-                velit cum! Sequi, aperiam!
+              <p class="text-lg leading-7 text-left md:text-justify">
+                We are a collective of seasoned electrical engineers and
+                industry professionals, each with over a decade of dedicated
+                service in the field. Our shared passion for electrical
+                engineering drives our commitment to excellence. With extensive
+                expertise acquired through collaboration with licensed
+                electrical contractors and engineers, we tackle diverse projects
+                with precision and innovation. Our client-centric approach sets
+                us apart and we believe that every electrical solution should
+                align with our clients' unique needs and visions. By blending
+                our technical expertise with creativity, we craft modern,
+                efficient, and aesthetically pleasing systems that prioritize
+                safety and compliance with electrical regulations. Join us on
+                this electrifying journey, and together, we'll power your
+                projects with precision and passion.
               </p>
               <button
                 class="block my-4 border py-3 px-5 border-darkBlue bg-[#141e46ee] text-lightRed rounded hover:bg-[#141e46]"
@@ -482,17 +489,84 @@
       </div>
     </section>
     <!-- Footer Section -->
-    <section>
-      <div class="bg-white">
-        <div class="relative isolate px-6 lg:px-15 py-8 md:py-30">
-          <div class="mx-auto py-8 sm:text-left">
-            <h2
-              class="text-2xl text-center sm:text-4xl font-bold text-darkBlue my-10"
+    <section class="bg-[#141E46]">
+      <div
+        class="relative isolate px-4 lg:px-15 py-10 md:py-30 h-[100%] md:h-[40%] text-light"
+        style="
+          background: url('/dist/images/pngwing.png');
+          background-repeat: no-repeat;
+          background-position: center/center;
+        "
+      >
+        <div class="flex flex-col md:flex-row justify-start items-start gap-3">
+          <div class="flex-1 flex flex-col">
+            <p class="flex-1">
+              <img
+                class="w-[30%] md:w-[25%] h-13"
+                src="images/logo.png"
+                alt="IMS Logo"
+              />
+            </p>
+            <p class="mt-1">
+              Experience the future of <br />engineering excellence today...
+            </p>
+            <p>
+              New site Lugbe, Abuja Nigeria <br />
+              mail@mailservice.com <br />
+              +2348100112233
+            </p>
+          </div>
+          <div class="flex-1">
+            <p class="text-[1.3rem]">Explore</p>
+            <a href="#" class="block w-[15%] ml-3 hover:text-lightRed">About</a>
+            <a href="#" class="block w-[15%] ml-3 hover:text-lightRed"
+              >Partners</a
             >
-              Contact Us
-            </h2>
+            <a href="#" class="block w-[15%] ml-3 hover:text-lightRed"
+              >Support</a
+            >
+            <a href="#" class="block w-[30%] ml-3 hover:text-lightRed"
+              >Projects Gallery</a
+            >
+            <a href="#" class="block w-[15%] ml-3 hover:text-lightRed"
+              >Privacy</a
+            >
+          </div>
+          <div class="flex-1">
+            <p class="text-[1.3rem]">Newsletter</p>
+            <div class="mb-2 text-darkBlue">
+              <input
+                type="text"
+                class="mt-1 p-2 rounded-md outline-none border-none"
+                placeholder="username@example.com"
+              />&nbsp;<input
+                type="submit"
+                class="bg-darkRed py-2 px-2 -ml-2 sm:mt-3 rounded-r-md hover:bg-lightRed"
+                value="Subscribe"
+              />
+            </div>
+            <div class="">
+              <h4 class="text-[1.3rem]">Socials</h4>
+              <p class="flex flex-row gap-4 mt-2">
+                <i
+                  class="text-2xl hover:text-lightRed fa-brands fa-facebook"
+                ></i>
+                <i
+                  class="text-2xl hover:text-lightRed fa-brands fa-twitter"
+                ></i>
+                <i
+                  class="text-2xl hover:text-lightRed fa-brands fa-instagram"
+                ></i>
+                <i class="text-2xl hover:text-lightRed fa-brands fa-google"></i>
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+    <section>
+      <div class="isolate py-3 relative bg-light text-darkBlue">
+        <p class="text-center">All Rights Reserved &copy; IMS 2023</p>
       </div>
     </section>
     <script>
